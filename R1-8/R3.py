@@ -57,19 +57,14 @@ def main():
     ax1.set_ylabel("State (x, v)")
     ax1.set_title("Time Dependency")
     ax1.legend(loc='upper right')
-    ax1.grid(True, linestyle='--', alpha=0.6)
+    ax1.grid(False)
 
     plt.sca(ax2)
     phase_space(x, v)
-    ax2.grid(True, linestyle='--', alpha=0.6)
+    ax2.grid(False)
 
 
     plt.tight_layout()
-
-    """filename = generate_path(basename='Harmonic-SHO-Output', extension='png')
-    
-    plt.savefig(filename, bbox_inches='tight')
-    print(f"Output file saved to {filename}.")"""
     
     plt.show()
 

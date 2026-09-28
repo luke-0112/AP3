@@ -50,7 +50,7 @@ def main():
     plt.xlabel("Time (t)")
     plt.ylabel("Displacement (x)")
     plt.legend(loc='upper right')
-    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.grid(False)
     plt.show()
     
     
@@ -64,7 +64,7 @@ def main():
         plt.title(f"Phase Space: $\omega_d$ = {omegad:.2f}")
         plt.xlabel("x")
         plt.ylabel("v")
-        plt.grid(True, linestyle='--', alpha=0.6)
+        plt.grid(False)
     
     plt.show()
 

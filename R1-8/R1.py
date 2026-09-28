@@ -57,7 +57,7 @@ def main():
     plt.xlabel('Time (t)')
     plt.ylabel('Displacement (y)')
     plt.legend() # Show the legend
-    plt.grid(True, linestyle='--', alpha=0.6)
+    plt.grid(False)
     
     # Show the plot
     plt.show()

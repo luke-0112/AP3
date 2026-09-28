@@ -57,7 +57,7 @@ def main():
         ax_time.set_xlabel("Time (t)")
         ax_time.set_ylabel("State (x, v)")
         ax_time.legend(loc='upper right')
-        ax_time.grid(True, linestyle='--', alpha=0.6)
+        ax_time.grid(False)
         
         #plot R
         ax_phase = axes[i, 1]
@@ -65,7 +65,7 @@ def main():
         ax_phase.set_title(f"Phase Space: {label}")
         ax_phase.set_xlabel("x")
         ax_phase.set_ylabel("v")
-        ax_phase.grid(True, linestyle='--', alpha=0.6)
+        ax_phase.grid(False)
 
         #at rest => maximum amplitude < initial(0.01)
         max_amp = np.max(np.abs(x))

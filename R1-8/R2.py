@@ -39,7 +39,7 @@ def main():
     plt.title('RL Circuit Transient Response: Numerical vs Exact')
     plt.xlabel('Time (t) / s')
     plt.ylabel('Current (I) / A')
-    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.grid(False)
     plt.legend()
     plt.show()
 

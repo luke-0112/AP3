@@ -43,18 +43,18 @@ def main():
     ax_time = axes[0]
     ax_time.plot(t_sol, x, label="x(t)")
     ax_time.plot(t_sol, v, label="v(t)")
-    ax_time.set_title(f"Time Dependency: b={b}, omega0={omega0}")
+    ax_time.set_title(f"Time Dependency: b={b}, $\omega_0$={omega0}")
     ax_time.set_xlabel("Time (t)")
     ax_time.set_ylabel("State (x, v)")
     ax_time.legend(loc='upper right')
-    ax_time.grid(True, linestyle='--', alpha=0.6)
+    ax_time.grid(False)
     
     ax_phase = axes[1]
     ax_phase.plot(x, v, 'k', linewidth=1.5)
-    ax_phase.set_title(f"Phase Space: b={b}, omega0={omega0}")
+    ax_phase.set_title(f"Phase Space: b={b}, $\omega_0$={omega0}")
     ax_phase.set_xlabel("x")
     ax_phase.set_ylabel("v")
-    ax_phase.grid(True, linestyle='--', alpha=0.6)
+    ax_phase.grid(False)
     
     plt.tight_layout()
     plt.show()
